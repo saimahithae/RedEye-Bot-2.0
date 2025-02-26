@@ -1,0 +1,20 @@
+name: Run RedEye Bot Automation
+
+on:
+  repository_dispatch:  # Allows external triggering
+  workflow_dispatch:  # Allows manual triggering from GitHub UI
+
+jobs:
+  run-bot:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Xcode
+        run: |
+          xcode-select --install
+          sudo xcodebuild -license accept
+
+      - name: Run Automation Bot
+        run: xcodebuild test -scheme MyAutomationBot -destination 'platform=iOS Simulator,name=iPhone 14'
