@@ -12,11 +12,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: List Available Xcode Versions  # This will print available Xcode versions
-        run: ls /Applications | grep Xcode
-
       - name: Set Xcode Version
-        run: sudo xcode-select --switch /Applications/Xcode_15.4.app/Contents/Developer  # Change 15.4 if needed
+        run: sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer # Change 15.4 if needed
 
       - name: Set up Xcode
         run: sudo xcodebuild -license accept
