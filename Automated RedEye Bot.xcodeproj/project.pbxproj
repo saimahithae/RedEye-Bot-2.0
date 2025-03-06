@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
@@ -30,21 +30,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		2BA724BF2D6DB58C00105DA7 /* Automated RedEye Bot */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Automated RedEye Bot";
-			sourceTree = "<group>";
-		};
-		2BA724D02D6DB58D00105DA7 /* Automated RedEye BotTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Automated RedEye BotTests";
-			sourceTree = "<group>";
-		};
-		2BA724DA2D6DB58D00105DA7 /* Automated RedEye BotUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Automated RedEye BotUITests";
-			sourceTree = "<group>";
-		};
+		2BA724BF2D6DB58C00105DA7 /* Automated RedEye Bot */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Automated RedEye Bot"; sourceTree = "<group>"; };
+		2BA724D02D6DB58D00105DA7 /* Automated RedEye BotTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Automated RedEye BotTests"; sourceTree = "<group>"; };
+		2BA724DA2D6DB58D00105DA7 /* Automated RedEye BotUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Automated RedEye BotUITests"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +175,7 @@
 				};
 			};
 			buildConfigurationList = 2BA724B82D6DB58C00105DA7 /* Build configuration list for PBXProject "Automated RedEye Bot" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -195,7 +184,6 @@
 			);
 			mainGroup = 2BA724B42D6DB58C00105DA7;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 2BA724BE2D6DB58C00105DA7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
