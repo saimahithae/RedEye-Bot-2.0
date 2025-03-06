@@ -6,17 +6,17 @@ on:
 
 jobs:
   run-bot:
-    runs-on: macos-latest  # Uses latest available macOS
+    runs-on: macos-latest  # Uses latest available macOS runner
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: List Available Xcode Versions
-        run: ls /Applications | grep Xcode  # This will show all installed Xcode versions
+      - name: List Available Xcode Versions  # This will print available Xcode versions
+        run: ls /Applications | grep Xcode
 
       - name: Set Xcode Version
-        run: sudo xcode-select --switch /Applications/Xcode_15.4.app/Contents/Developer
+        run: sudo xcode-select --switch /Applications/Xcode_15.4.app/Contents/Developer  # Change 15.4 if needed
 
       - name: Set up Xcode
         run: sudo xcodebuild -license accept
